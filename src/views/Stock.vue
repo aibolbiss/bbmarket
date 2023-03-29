@@ -69,10 +69,16 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
 import { useMarketStore } from '../store/index';
 import Filters from '@/components/Filters.vue';
 
 const marketStore = useMarketStore();
+
+onMounted(() => {
+  marketStore.getAllProducts();
+});
+
 components: {
   Filters;
 }

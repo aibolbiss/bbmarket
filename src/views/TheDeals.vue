@@ -4,7 +4,7 @@
   <div class="card">
     <div
       class="card__item"
-      v-for="market in marketStore.dealFilters"
+      v-for="market in marketStore.dealFilter"
       :key="market.id"
     >
       <div class="leftside">
@@ -30,7 +30,9 @@
             <p>Вид товара</p>
             <span>{{ market.typeGoods }}</span>
           </div>
-          <p class="leftside__content-description">{{ market.description }}</p>
+          <p class="leftside__content-description">
+            {{ market.description }}
+          </p>
         </div>
       </div>
       <div class="rightside">

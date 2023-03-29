@@ -4,7 +4,7 @@
   <div class="card">
     <div
       class="card__item"
-      v-for="market in marketStore.favoriteFilters"
+      v-for="market in marketStore.favoriteFilter"
       :key="market.id"
     >
       <div class="leftside">
