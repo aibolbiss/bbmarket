@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Rubik', sans-serif;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.header {
+	margin-bottom: 77px;
+}
+.header__block {
+	background-color: #e0e3ee;
+	height: 40px;
+	border-radius: 0px 0px 10px 10px;
+}
+.header__navbar {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+.navbar {
+	display: flex;
+}
+.navbar__item {
+	width: 86px;
+}
+.navbar__item-link {
+	padding: 7px 0;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.navbar__item-text {
+	color: #2d3b87;
+	margin-top: 5px;
+	font-size: 13px;
+	font-weight: 500;
+}
+.router-link-active {
+	background-color: #f4f5f9;
+}
+.filters {
+	display: flex;
+	justify-content: space-between;
+}
+.filters__types {
+	width: 304px;
+	padding: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f4f5f9;
+	border: 1px solid #e0e3ee;
+	border-radius: 10px;
+}
+.filters__search {
+	position: relative;
+}
+.filters__search-input {
+	display: block;
+	width: 274px;
+	height: 48px;
+	border: 1px solid #e0e3ee;
+	border-radius: 10px;
+	padding: 0 20px;
+}
+.filters__search-btn {
+	background-color: #2d3b87;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 5px;
+	right: 5px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.filters__search-btn:hover {
+	background-color: rgb(43, 53, 111);
+}
+
+.card {
+	margin: 40px 20px 0;
+}
+.card__item {
+	display: flex;
+	border: 1px solid #e0e3ee;
+	border-radius: 20px;
+	margin-bottom: 40px;
+}
+/* LeftSide */
+.leftside {
+	width: 75%;
+	display: flex;
+	padding: 20px;
+}
+.leftside__image>img {
+	width: 254px;
+	height: 254px;
+	object-fit: cover;
+	border: 1px solid #e0e3ee;
+	border-radius: 10px;
+}
+.leftside__content {
+	padding-left: 20px;
+}
+.leftside__content-type {
+	font-size: 13px;
+	font-weight: 400;
+	color: #969dc3;
+	margin-bottom: 15.5px;
+}
+.leftside__content-title {
+	font-size: 15px;
+	font-weight: 500;
+	color: #2d3b87;
+	margin-bottom: 30px;
+}
+.leftside__content-city {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #f4f5f9;
+	border-radius: 5px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #616ca5;
+	margin-bottom: 12px;
+}
+.leftside__content-city>img {
+	position: relative;
+	top: 2px;
+}
+.leftside__content-salesman {
+	font-size: 13px;
+	font-weight: 400;
+	color: #969dc3;
+	margin-bottom: 12px;
+}
+.leftside__content-salesman>span {
+	color: #2d3b87;
+}
+.leftside__content-typegood {
+	background-color: #f4f5f9;
+	font-size: 13px;
+	font-weight: 400;
+	border-radius: 10px;
+	display: inline-block;
+	padding: 8px;
+	margin-bottom: 12px;
+}
+.leftside__content-typegood>p {
+	color: #969dc3;
+	padding-bottom: 5px;
+}
+.leftside__content-typegood>span {
+	color: #616ca5;
+}
+.leftside__content-description {
+	font-size: 13px;
+	font-weight: 400;
+	color: #2d3b87;
+	margin-bottom: 12px;
+}
+/* RightSide */
+.rightside {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	border-left: 1px solid #e0e3ee;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.rightside__price {
+	font-size: 20px;
+	font-weight: 500;
+	color: #2d3b87;
+	margin-bottom: 13.5px;
+}
+.rightside__quantity {
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 11px;
+}
+.rightside__quantity>p {
+	color: #969dc3;
+}
+.rightside__quantity>span {
+	color: #2d3b87;
+}
+/* RightSide Buttons */
+.rightside__buttons {
+	display: flex;
+	justify-content: space-between;
+}
+.btn {
+	font-size: 15px;
+	font-weight: 500;
+	color: #2d3b87;
+	border: none;
+	border-radius: 10px;
+	background: #f4f5f9;
+	cursor: pointer;
+}
+.btn-deals {
+	padding: 17.5px 35.5px;
+}
+.btn-favorite {
+	padding: 18px;
+}
+.btn-favorite-active {
+	background-color: #2d3b87;
+}
+.btn-pay {
+	padding: 12.5px 67.5px;
+	background-color: #69c57f;
+	color: #ffffff;
+}
+.btn-payed {
+	background-color: #ffffff;
+	color: #969dc3;
+	border: 1px solid #e0e3ee;
+	border-radius: 10px;
+}
