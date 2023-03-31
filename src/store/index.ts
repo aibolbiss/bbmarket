@@ -20,7 +20,7 @@ export const useMarketStore = defineStore('marketStore', {
 	},
 	actions:{
 		async getAllProducts(){
-			let serverURL = 'http://localhost:8081/stock'
+			let serverURL = 'https://bb-market.herokuapp.com/api/stock'
 			let response = await fetch(serverURL)
 			let data = await response.json()
 			this.market = data
